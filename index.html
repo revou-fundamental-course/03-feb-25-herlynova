@@ -7,11 +7,69 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="container">
     <header>
-        <h1>konversi Suhu</h1>
-        
+        <h1>Konversi Suhu</h1>
     </header>
-    <main></main>
+
+    <main>
+        <!-- pengenalan -->
+         <section>
+         <p>masukkan suhu derajat celcius (&deg;C) ke kotak dibawah, lalu klik tombol konversi untuk mendapatkan hasil konversi 
+            dalam bentuk fahrenheit (&deg;F)</p>
+        </section>
+
+        <!-- form inputan suhu celcius-->
+         <section>
+            <form id="formsuhu">
+            <div>
+                <label for="celcius">celcius (&deg;C) :</label>
+                <input type="number" id="celcius" placeholder="masukan suhu disini">
+            </div>
+
+            <div>
+                <button onclick="konversi()">Konversi</button>
+                <button onclick="reset()">Reset</button>
+                <button onclick="reverse()">Reverse</button>
+            </div>
+            </form>
+         </section>
+
+         <!-- form hasil ke fahrenheit -->
+          <section>
+            <div class="fahrenheit">
+                <label for="fahrenheit">Fahrenheit (&deg;F) :</label>
+                <input type="text" id="fahrenheit" readonly>
+            </div>
+          </section>
+
+          <!-- cara kalkulasi -->
+           <section>
+                <div>
+                <label for="kalkulasi">Cara Kalkulasi :</label>
+                <input type="text" id="kalkulasi" readonly>
+            </div>
+           </section>
+
+           <!-- cara konversi -->
+            <section>
+                <header>
+                    <h2>cara konversi dari celcius (&deg;C) ke Fahrenheit (&deg;F)</h2>
+                </header>
+                <hr>
+            <article>
+                <p>Suhu <i><span>S</span></i> dalam derajat fahrenheit (&deg;F) sama dengan suhu <i><span>S</span></i> </p>
+                  <p>  dalam derajat celcius (&deg;C) kali 9/5 tambah 32</p>
+                <p> S<sub>(&deg;F)</sub>= (S <sub>(&deg;C)</sub> x 9/5) + 32</p>
+                <p>atau</p>
+                <p>S<sub>(&deg;F)= (S <sub>(&deg;C)</sub> x 1.8) + 32</p>
+            </article>
+
+            </section>
+
+    </main>
+
     <footer></footer>
+</div>
 </body>
 </html>
