@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>website konversi suhu</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -15,7 +16,7 @@
     <main>
         <!-- pengenalan -->
          <section>
-         <p>masukkan suhu derajat celcius (&deg;C) ke kotak dibawah, lalu klik tombol konversi untuk mendapatkan hasil konversi 
+         <p>Masukkan suhu derajat celcius (&deg;C) ke kotak dibawah, lalu klik tombol konversi untuk mendapatkan hasil konversi 
             dalam bentuk fahrenheit (&deg;F)</p>
         </section>
 
@@ -28,9 +29,9 @@
             </div>
 
             <div>
-                <button onclick="konversi()">Konversi</button>
-                <button onclick="reset()">Reset</button>
-                <button onclick="reverse()">Reverse</button>
+                <button type="submit" >Konversi</button>
+                <button type="button" id="reset">Reset</button>
+                <button type="button" id="reverse">Reverse</button>
             </div>
             </form>
          </section>
@@ -62,7 +63,7 @@
                   <p>  dalam derajat celcius (&deg;C) kali 9/5 tambah 32</p>
                 <p> S<sub>(&deg;F)</sub>= (S <sub>(&deg;C)</sub> x 9/5) + 32</p>
                 <p>atau</p>
-                <p>S<sub>(&deg;F)= (S <sub>(&deg;C)</sub> x 1.8) + 32</p>
+                <p>S<sub>(&deg;F)</sub>= (S <sub>(&deg;C)</sub> x 1.8) + 32</p>
             </article>
 
             </section>
@@ -70,6 +71,7 @@
     </main>
 
     <footer></footer>
+
 </div>
 </body>
 </html>

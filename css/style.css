@@ -1,6 +1,8 @@
 /* ini file css */
 body{
     background-color: salmon;
+    background: url(../pict/1.png);
+    background-size: 100vw 100vh;
 }
 
 .container{
@@ -8,10 +10,11 @@ body{
     height: 650px;
     background-color: rgb(207, 203, 203);
     margin: auto;
-    margin-top: 50px;
+    margin-top: 100px;
     border: 2px solid black;
-    padding-left: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-left: 10px;
+    padding-right: 5px;
+    box-shadow: 0 0 10px rgba(167, 98, 167, 0.1);
 }
 main{
     width: 500px;
@@ -59,11 +62,8 @@ article p{
 }
 
 hr{
-    width: 13cm;
-    padding-left: 0;
-    padding-right: 0px;
+    width: 92%;
 }
 span{
     font-size: 20px;
- 
 }

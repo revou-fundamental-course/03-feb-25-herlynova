@@ -1,8 +1,8 @@
 // ini fie javascript
-document.getElementById('tempForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form submission
+document.getElementById('formsuhu').addEventListener('submit', function(event) {
+    event.preventDefault();
 
-    const temperatureInput = document.getElementById('temperature').value;
+    const temperatureInput = document.getElementById('celcius').value;
     const unit = document.getElementById('unit').value;
 
     // Validate input
