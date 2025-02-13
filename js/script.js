@@ -34,7 +34,7 @@ function reverseConversion() {
 
     if (unit === "celsius") {
         var fahrenheit = (temperature * 9/5) + 32;
-        resultText = temperature + "°C = " + fahrenheit.toFixed(2) + "° F";
+        resultText = temperature + "°C = " + fahrenheit.toFixed(2) + "°F";
     } else if (unit === "fahrenheit") {
         var celsius = (temperature - 32) * 5/9;
         resultText = temperature + "°F = " + celsius.toFixed(2) + "°C";
